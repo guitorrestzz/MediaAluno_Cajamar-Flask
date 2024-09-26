@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <img src="../static/colegio.png" alt="logo">
+        <a href="/"> Voltar</a> | 
+        <a href="/notas"> Ver Notas</a>
+    </nav>
+    
+    <div class="notas_alunos">
+        <h2>Notas do Aluno</h2>
+        <table class="consulta_produtos_tabela">
+            <thead>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Média</th>
+                    <th>Status</th>
+                    <th>Excluir</th>
+                </tr>
+                {% for pro in prod %}
+                <tr>
+                    <td>{{ pro.nome }}</td>
+                    <td>{{ pro.nota1 }}</td>
+                    <td>{{ pro.nota2 }}</td>
+                    <td>{{ pro.nota3 }}</td>
+                    <td>{{ pro.media }}</td>
+                    <td>{{ pro.status }}</td>
+                    <td><a href="/excluir_produto?linha={{ loop.index0 }}" class="link_produto">Deletar</a></td>
+                    
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

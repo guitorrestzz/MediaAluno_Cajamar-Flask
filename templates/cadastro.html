@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaAluno</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <img src="../static/colegio.png" alt="logo">
+        <a href="/">Home</a> | 
+        <a href="/notas"> Ver Notas</a>
+    </nav>
+    <div class="media_calc">
+        <form action="/cadastro" method="post" class="cad_produtos_formulario">
+            <h2>Média do Aluno</h2>
+            <label for="">Nome do Aluno:</label>
+            <input type="text" name="nome_aluno" id="nome_aluno"> <br>
+
+            <label for="">Nota 1:</label>
+            <input type="text" name="nota1" id="nota1"> <br>
+
+            <label for="">Nota 2:</label>
+            <input type="text" name="nota2" id="nota2"> <br>
+
+            <label for="">Nota 3:</label>
+            <input type="text" name="nota3" id="nota3"> <br>
+
+            <label for="">Matéria:</label>
+            <input type="text" name="materia" id="materia"> <br>
+
+            <div>
+                <button type="submit" class="media_enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
