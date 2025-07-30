@@ -21,4 +21,6 @@ Exibição da situação final do aluno
 
 Interface web para facilitar o uso
 
-![Homepage](image_media/mediaaluno)
+![Homepage](image_media/mediaaluno.png)
+![Homepage](image_media/mediaaluno2.png)
+![Homepage](image_media/mediaaluno3.png)
